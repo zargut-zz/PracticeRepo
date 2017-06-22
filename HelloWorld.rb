@@ -6,7 +6,8 @@ class Person
 	end
 
 	def greet
-		print "Hey #{@name}!"
+		greetting = "Hey #{@name}!"
+		greetting
 	end
 
 	def list_fam
@@ -23,3 +24,7 @@ class Person
 		end
 	end
 end
+fam = ["dog"]
+
+Person.new("Tim",fam, 10).greet
+
